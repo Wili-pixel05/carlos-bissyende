@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Site Personnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mon Site Personnel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+				<li><a href="agenda.html">Agenda</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<section id="contact">
+        <legend><h2>Contact</h2></legend>
+        <div class="contact-form">
+            <label for="reason">Pourquoi voulez-vous nous contacter ?</label>
+            <select id="reason" name="reason">
+                <option value="question">Question</option>
+                <option value="feedback">Retour</option>
+                <option value="collaboration">Collaboration</option>
+            </select> <br></br>
+
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email"> <br></br>
+
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" rows="4" placeholder="Écrivez votre message ici..."></textarea> <br></br>
+        </div>
+    </section> <br></br> 
+	<button type="submit">Envoyer</button> <br></br> <br></br> <br></br> <br></br> <br></br> 
+    </main> <br></br><br></br>
+	 
+</body>
+</html>

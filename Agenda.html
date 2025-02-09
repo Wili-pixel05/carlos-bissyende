@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Mon Site Personnel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+    th {
+        background-color: #87CEEB;
+    }
+    .anglais { background-color: #FFA07A; }
+    .reseaux { background-color: #FFB6C1; }
+    .algorithmique { background-color: #FFD700; }
+    .bases-de-donnees { background-color: #DDA0DD; }
+    .genie-logiciel { background-color: #FF6347; }
+    .technologies-du-web { background-color: #32CD32; }
+    .programmation { background-color: #98FB98; }
+    .systèmes { background-color: #CD5C5C; }
+    .sport { background-color: #008000; }
+    .vide { background-color: #5d4f359c;}
+    .rien { background-color: aqua;}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 20px;
+    }
+
+    .legend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 600px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .color-box {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #999;
+    }
+
+    /* Couleurs spécifiques */
+    .algo { background-color: #ffff00; }
+    .anglais { background-color: #ffa500; }
+    .bdd { background-color: #ffb6c1; }
+    .gl { background-color: #ff00ff; }
+    .prog { background-color: #90ee90; }
+    .reseaux { background-color: #9370db; }
+    .sport { background-color: #32cd32; }
+    .systemes { background-color: #ff4500; }
+    .web { background-color: #20b2aa; }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Mon Site Personnel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="agenda.html" class="active">Agenda</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <table>
+        <tr>
+            <th>Horaires</th>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+        </tr>
+        <tr>
+            <td class="rien">8h-10h</td>
+            <td class="anglais">Anglais</td>
+            <td class="rien"></td>
+            <td class="bases-de-donnees">bases de données</td>
+            <td class="technologies-du-web" rowspan="2">Technologies du Web</td>
+            <td class="programmation" rowspan="2">Programmation</td>
+        </tr>
+        <tr>
+            <td class="rien">10h-12h</td>
+            <td class="reseaux">Réseaux</td>
+            <td class="algorithmique">Algorithmique</td>
+            <td class="genie-logiciel">Génie Logiciel</td>
+        </tr>
+        <tr>
+            <td class="vide" colspan="6"> </td>
+        </tr>
+        <tr>
+            <td class="rien" rowspan="2">13h-15h<br>15h-17h</td>
+            <td class="bases-de-donnees" rowspan="2">bases de données</td>
+            <td class="programmation" rowspan="2">programmation</td>
+            <td class="systèmes">Systèmes</td>
+            <td class="sport" rowspan="2">sport </td>
+            <td class="anglais">Anglais</td>
+        </tr>
+        <tr>
+            <td class="rien"></td>
+            <td class="rien"></td>
+        </tr>
+    </table>
+    <div class="legend-grid">
+        <div class="legend-item">
+          <div class="color-box algo"></div>
+          <span>Algorithmique</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box gl"></div>
+          <span>Génie Logiciel</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box sport"></div>
+          <span>Sport</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box anglais"></div>
+          <span>Anglais</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box prog"></div>
+          <span>Programmation</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box systemes"></div>
+          <span>Systèmes</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box bdd"></div>
+          <span>Bases de données</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box reseaux"></div>
+          <span>Réseaux</span>
+        </div>
+        <div class="legend-item">
+          <div class="color-box web"></div>
+          <span>Technologies du Web</span>
+        </div>
+      </div>
+</body>
+</html>
